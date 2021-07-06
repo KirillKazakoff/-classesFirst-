@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 import Character from './character';
 
 export class Bowman extends Character {
@@ -35,7 +36,7 @@ export class Undead extends Character {
 export class Zombie extends Character {
     constructor(name, type) {
         super(name, type);
-        this.attack = 40; 
+        this.attack = 40;
         this.defence = 10;
     }
 }

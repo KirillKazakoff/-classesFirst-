@@ -19,20 +19,6 @@ test('incorrect input', () => {
     expect(check).toThrow()
 })
 
-// const magSuccess = {
-//     attack: 10,
-//     defence: 40,
-//     type: 'Magician',
-//     level: 1,
-//     health: 100,
-//     name: 'Gregor'
-// }
-
-// test('mag test', () => {
-//     debugger
-//     const result = new Magician('Gregor', 'Magician');
-//     expect(result).toEqual(magSuccess)
-// })
 
 
 
