@@ -10,6 +10,6 @@ const success = {
 };
 
 test('successful initialize', () => {
-    const result = new Daemon('Clinkz', 'Daemon');
+    const result = new Daemon('Clinkz');
     expect(result).toEqual(success);
 });

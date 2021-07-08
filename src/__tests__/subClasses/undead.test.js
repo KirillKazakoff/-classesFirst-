@@ -10,6 +10,6 @@ const success = {
 };
 
 test('successful initialize', () => {
-    const result = new Undead('Clinkz', 'Undead');
+    const result = new Undead('Clinkz');
     expect(result).toEqual(success);
 });

@@ -10,6 +10,6 @@ const success = {
 };
 
 test('successful initialize', () => {
-    const result = new Swordman('Clinkz', 'Swordman');
+    const result = new Swordman('Clinkz');
     expect(result).toEqual(success);
 });

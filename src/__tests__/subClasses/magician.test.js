@@ -10,6 +10,6 @@ const success = {
 };
 
 test('successful initialize', () => {
-    const result = new Magician('Clinkz', 'Magician');
+    const result = new Magician('Clinkz');
     expect(result).toEqual(success);
 });

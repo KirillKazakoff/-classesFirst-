@@ -10,6 +10,6 @@ const success = {
 };
 
 test('successful initialize', () => {
-    const result = new Zombie('Clinkz', 'Zombie');
+    const result = new Zombie('Clinkz');
     expect(result).toEqual(success);
 });
