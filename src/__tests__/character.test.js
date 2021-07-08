@@ -14,8 +14,3 @@ test('incorrect value input', () => {
     const check = () => new Bowman(1, 'Bowman');
     expect(check).toThrow('incorrect value input');
 });
-
-test('there is no such type', () => {
-    const check = () => new Bowman('bowman', 'someType');
-    expect(check).toThrow('there is no such type');
-});
