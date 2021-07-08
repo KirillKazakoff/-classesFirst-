@@ -1,25 +1,21 @@
-import {Bowman, Swordman, Magician, Undead, Zombie, Daemon} from '../js/charTypes.js';
+import Bowman from '../js/subClasses/bowman';
 
-const success = {
-    attack: 25,
-    defence: 25,
-    type: 'Bowman',
-    level: 1,
-    health: 100,
-    name: 'Clinkz'
-}
+test('too long name inputed', () => {
+    const check = () => new Bowman('toobignameforit', 'Bowman');
+    expect(check).toThrow('too long name inputed');
+});
 
-test('successful initialize', () => {
-    const result = new Bowman('Clinkz', 'Bowman');
-    expect(result).toEqual(success);   
-})
+test('too short name inputed', () => {
+    const check = () => new Bowman('t', 'Bowman');
+    expect(check).toThrow('too short name inputed');
+});
 
-test('incorrect input', () => {
-    const check = () => new Bowman('toobignameforitreallytoomuchomgmanwhoareyou', 'someType');
-    expect(check).toThrow()
-})
+test('incorrect value input', () => {
+    const check = () => new Bowman(1, 'Bowman');
+    expect(check).toThrow('incorrect value input');
+});
 
-
-
-
-
+test('there is no such type', () => {
+    const check = () => new Bowman('bowman', 'someType');
+    expect(check).toThrow('there is no such type');
+});
